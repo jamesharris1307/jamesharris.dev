@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60px 1fr 40px; 
+    font-family: system-ui, sans-serif;
+    background: #0f0f0f;
+    color: #eaeaea;
+}
+
+.Header {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background: #151515;
+    border-bottom: 1px solid #222;
+}
+
+.Header_Content {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+}
+
+body > div:nth-of-type(2) {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+.Side_Bar {
+    background: #121212;
+    padding: 1rem;
+    border-right: 1px solid #222;
+}
+
+.Side_Bar_Title {
+    text-align: center;
+}
+
+.Side_Bar_Title_Button {
+    color: white;
+    background: transparent;
+    border: 0;
+}
+
+.Side_Bar_Title_Button:Hover {
+    cursor:pointer
+}
+
+.Side_Bar_Content {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.Side_Bar_Button {
+    margin-left: 25px;
+    border: 0;
+    background: transparent;
+    color: white;
+}
+
+.Side_Bar_Button:hover {
+    cursor:pointer;
+    color: grey;
+}
+
+.Main_Content {
+    background: #0f0f0f;
+    margin: 3dvh 30px 30px 40px;
+}
+
+footer {
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151515;
+    border-top: 1px solid #222;
+    font-size: 0.9rem;
+}
