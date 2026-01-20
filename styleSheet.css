@@ -1,3 +1,14 @@
+/* ------ Variables for switching between colour modes ------ */
+:root {
+    --bg-main: #0f0f0f;
+    --bg-alt: #151515;
+    --bg-sidebar: #121212;
+    --text-main: #eaeaea;
+    --border-color: #222;
+    --accent-color: #007bff;
+    --hover-color: #aaaaaa;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +20,31 @@ body {
     display: grid;
     grid-template-rows: 60px 1fr 40px; 
     font-family: system-ui, -apple-system, sans-serif;
-    background: #0f0f0f;
-    color: #eaeaea;
+    background: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ------ Smooth transition between colour modes ------ */
+.Header, 
+.Side_Bar, 
+footer, 
+.Side_Bar_Button {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .Header {
     grid-row: 1;
     display: flex;
-    background: #151515;
-    border-bottom: 1px solid #222;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border-color);
     padding: 0 1.5rem;
 }
 
@@ -35,17 +62,17 @@ body {
 }
 
 .Side_Bar {
-    background: #121212;
+    background: var(--bg-sidebar);
     padding: 1.5rem;
-    border-right: 1px solid #222;
+    border-right: 1px solid var(--border-color);
 }
 
-.Side_Bar_Title_Button {
-    color: white;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    width: 100%;
+.Side_Bar_Title_Link {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 .Side_Bar_Content {
@@ -58,15 +85,16 @@ body {
 .Side_Bar_Button {
     border: 0;
     background: transparent;
-    color: white;
+    color: var(--text-main);
     font-size: 1.1rem;
     text-align: left;
     cursor: pointer;
     transition: color 0.2s;
+    padding: 8px 0;
 }
 
 .Side_Bar_Button:hover {
-    color: #aaa;
+    color: var(--hover-color);
 }
 
 .Main_Content {
@@ -78,11 +106,29 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #151515;
-    border-top: 1px solid #222;
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border-color);
     font-size: 0.9rem;
 }
 
+.Icon_Button {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+    transition: all 0.2s ease;
+}
+
+.Icon_Button:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+/* ------ Small Phone like Screens ------ */
 @media (max-width: 768px) {
     .Layout_Container {
         grid-template-columns: 1fr;
@@ -90,8 +136,7 @@ footer {
 
     .Side_Bar {
         border-right: none;
-        border-bottom: 1px solid #222;
-        padding: 1rem;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .Side_Bar_Content {
@@ -103,23 +148,19 @@ footer {
 
     .Side_Bar_Button {
         font-size: 0.9rem;
-        text-align: center;
+        padding: 12px 15px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 5px;
     }
-
-    .Main_Content {
-        padding: 1.5rem;
-    }
-
-
 }
 
+
+/* ------ Big TV like Screens ------ */
 @media (min-width: 1921px) {
-    body {
-        font-size: 22px;
-    }
+    body { font-size: 26px; }
 
     .Layout_Container {
-        grid-template-columns: 350px 1fr;
+        grid-template-columns: 400px 1fr;
     }
 
     .Header, .Main_Content, footer {
@@ -127,11 +168,12 @@ footer {
         padding-right: 5%;
     }
 
+    .Side_Bar_Content { gap: 30px; }
     h1 { font-size: 4rem; }
-
-    button:focus, a:focus {
-    outline: 3px solid #007bff;
-    outline-offset: 4px;
-    }
 }
 
+/* ------ For Interaction using Keyboard or TV Remote Clicks ------ */
+button:focus, a:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+}
