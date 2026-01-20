@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 60px 1fr 40px; 
-    font-family: system-ui, sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
     background: #0f0f0f;
     color: #eaeaea;
 }
@@ -16,19 +16,19 @@ body {
 .Header {
     grid-row: 1;
     display: flex;
-    align-items: center;
-    padding: 0 1rem;
     background: #151515;
     border-bottom: 1px solid #222;
+    padding: 0 1.5rem;
 }
 
 .Header_Content {
-    grid-row: 1;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-body > div:nth-of-type(2) {
+.Layout_Container {
     grid-row: 2;
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -36,44 +36,41 @@ body > div:nth-of-type(2) {
 
 .Side_Bar {
     background: #121212;
-    padding: 1rem;
+    padding: 1.5rem;
     border-right: 1px solid #222;
-}
-
-.Side_Bar_Title {
-    text-align: center;
 }
 
 .Side_Bar_Title_Button {
     color: white;
     background: transparent;
     border: 0;
-}
-
-.Side_Bar_Title_Button:Hover {
-    cursor:pointer
-}
-
-.Side_Bar_Content {
-    margin-top: 25px;
+    cursor: pointer;
     width: 100%;
 }
 
+.Side_Bar_Content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .Side_Bar_Button {
-    margin-left: 25px;
     border: 0;
     background: transparent;
     color: white;
+    font-size: 1.1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s;
 }
 
 .Side_Bar_Button:hover {
-    cursor:pointer;
-    color: grey;
+    color: #aaa;
 }
 
 .Main_Content {
-    background: #0f0f0f;
-    margin: 3dvh 30px 30px 40px;
+    padding: 2rem;
 }
 
 footer {
@@ -85,3 +82,56 @@ footer {
     border-top: 1px solid #222;
     font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+    .Layout_Container {
+        grid-template-columns: 1fr;
+    }
+
+    .Side_Bar {
+        border-right: none;
+        border-bottom: 1px solid #222;
+        padding: 1rem;
+    }
+
+    .Side_Bar_Content {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    .Side_Bar_Button {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .Main_Content {
+        padding: 1.5rem;
+    }
+
+
+}
+
+@media (min-width: 1921px) {
+    body {
+        font-size: 22px;
+    }
+
+    .Layout_Container {
+        grid-template-columns: 350px 1fr;
+    }
+
+    .Header, .Main_Content, footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 { font-size: 4rem; }
+
+    button:focus, a:focus {
+    outline: 3px solid #007bff;
+    outline-offset: 4px;
+    }
+}
+
