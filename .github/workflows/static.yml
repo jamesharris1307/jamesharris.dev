@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Ruby
@@ -30,15 +30,11 @@ jobs:
         with:
           ruby-version: 3.2
 
-      - name: Install Jekyll
-        run: |
-          gem install bundler
-          bundle init
-          echo "gem 'jekyll', '~> 5.0'" >> Gemfile
-          bundle install
+      - name: Install Jekyll and Bundler
+        run: gem install jekyll bundler
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build -d ./_site
+        run: jekyll build -d ./_site
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
