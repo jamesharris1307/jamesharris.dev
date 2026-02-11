@@ -179,6 +179,44 @@ footer {
     margin: 2rem 0 0 0;
 }
 
+.Blog_Post_Container ul, 
+.Blog_Post_Container ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.Blog_Post_Container li {
+    margin-bottom: 0.5rem;
+}
+
+.Blog_Post_Container code {
+    background: var(--bg-main);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.Blog_Post_Container pre {
+    background: var(--bg-main);
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.Blog_Post_Container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.Blog_Post_Container img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
 /* ------ Small Phone like Screens ------ */
 @media (max-width: 768px) {
     

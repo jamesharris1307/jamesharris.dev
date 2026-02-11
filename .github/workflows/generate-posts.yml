@@ -1,0 +1,28 @@
+name: Update Post List
+on:
+  push:
+    paths:
+      - 'posts/**'
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Rebuild posts.json
+        run: |
+          echo "[" > posts.json
+          # Loop through markdown files and build a JSON array
+          for file in posts/*.md; do
+            fname=$(basename "$file")
+            echo "{\"filename\": \"$fname\"}," >> posts.json
+          done
+          # Clean up the trailing comma for valid JSON
+          sed -i '$ s/,$//' posts.json
+          echo "]" >> posts.json
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add posts.json
+          git commit -m "Auto-update posts list" || exit 0
+          git push
