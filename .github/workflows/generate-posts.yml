@@ -3,10 +3,8 @@ on:
   push:
     paths:
       - 'posts/**'
-
 permissions:
   contents: write
-  
 jobs:
   update-json:
     runs-on: ubuntu-latest
@@ -14,15 +12,27 @@ jobs:
       - uses: actions/checkout@v3
       - name: Rebuild posts.json
         run: |
-          echo "[" > posts.json
-          # Loop through markdown files and build a JSON array
+          # Create a temporary file
+          echo "[" > temp.json
+          
+          # Find all .md files, sort them, and format as JSON
+          # This handles the "trailing comma" issue much more cleanly
+          first=true
           for file in posts/*.md; do
-            fname=$(basename "$file")
-            echo "{\"filename\": \"$fname\"}," >> posts.json
+            if [ -f "$file" ]; then
+              fname=$(basename "$file")
+              if [ "$first" = true ]; then
+                echo "{\"filename\": \"$fname\"}" >> temp.json
+                first=false
+              else
+                echo ",{\"filename\": \"$fname\"}" >> temp.json
+              fi
+            fi
           done
-          # Clean up the trailing comma for valid JSON
-          sed -i '$ s/,$//' posts.json
-          echo "]" >> posts.json
+          
+          echo "]" >> temp.json
+          mv temp.json posts.json
+          
       - name: Commit changes
         run: |
           git config --global user.name "GitHub Action"
