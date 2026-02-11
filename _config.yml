@@ -1,3 +1,0 @@
-baseurl: "/jamesharris.dev"
-markdown: kramdown
-permalink: /blog/:title/
