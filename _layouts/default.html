@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="styleSheet.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header class="Header">
+        <div class="Header_Content">
+            <div><h3>James Harris</h3></div>
+            <div class="Theme_Controls">
+                <button id="Moon_Button" class="Icon_Button">Moon</button>
+                <button id="Sun_Button" class="Icon_Button">Sun</button>
+            </div>
+        </div>
+    </header>
 
-    <nav>
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-    </nav>
+    <div class="Layout_Container">
+        <nav class="Side_Bar">
+            <div class="Side_Bar_Title">
+                <a href="{{ site.baseurl }}/index.html" class="Side_Bar_Title_Link">Home</a>
+            </div>
+            <div class="Side_Bar_Content">
+                <a href="{{ site.baseurl }}/projects.html" class="Side_Bar_Button">Projects</a>
+                <a href="{{ site.baseurl }}/thoughts.html" class="Side_Bar_Button">Thoughts</a>
+            </div>
+        </nav>
 
-    <main>
-        {{ content }}
-    </main>
+        <main class="Main_Content">
+            <section class="Home_Section">
+                {{ content }}
+            </section>
+        </main>
+    </div>
 
+    <footer>
+        <p>© James Harris 2026</p>
+    </footer>
 </body>
 </html>
