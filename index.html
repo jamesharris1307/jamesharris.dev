@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/base.css">
-</head>
-<body>
-
-    <header class="header">
-        <div class="header__container">
-            <h1 class="header__title">Welcome to My Site</h1>
-        </div>
-    </header>
-
-    <main class="content">
-        {{ content }}
-    </main>
-
-    <footer class="footer">
-        <p class="footer__copyright">&copy; 2026 Your Name</p>
-    </footer>
-
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+<h2>Welcome to my Homepage</h2>
+<p>This content will be injected into the "content" spot of the layout above.</p>
+<a href="{{ '/blog' | relative_url }}">View my Essays</a>
