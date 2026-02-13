@@ -1,0 +1,56 @@
+/*-- Side Bar --*/
+
+.Side_Bar {
+    background: var(--bg-sidebar);
+    padding: 1.5rem;
+    border-right: 1px solid var(--border-color);
+}
+
+.Side_Bar_Title_Link {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.Side_Bar_Content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Side_Bar_Button {
+    border: 0;
+    background: transparent;
+    color: var(--text-main);
+    font-size: 1.1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 8px 0;
+}
+
+.Side_Bar_Button:hover {
+    color: var(--hover-color);
+}
+
+/*-- Header --*/
+.Header {
+    grid-row: 1;
+    display: flex;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 1.5rem;
+}
+
+/*-- Footer --*/
+footer {
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border-color);
+}

@@ -1,0 +1,36 @@
+/* ------ Smooth transition between colour modes ------ */
+.Header, 
+.Side_Bar, 
+footer, 
+.Side_Bar_Title,
+.Side_Bar_Button {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Header {
+    grid-row: 1;
+    display: flex;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 1.5rem;
+}
+
+.Header_Content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Layout_Container {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}

@@ -1,0 +1,71 @@
+/* ------ Small Phone like Screens ------ */
+@media (max-width: 768px) {
+    
+    .Main_Content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Projects_Content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Layout_Container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Side_Bar {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        justify-content: center;
+    }
+
+    .Side_Bar_Title_Link {
+        display: none;
+    }
+
+    .Side_Bar_Content {
+        padding: 5px;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0.25rem;
+    }
+
+    .Side_Bar_Button {
+        font-size: 0.9rem;
+        padding: 6px 6px;
+    }
+}
+
+
+/* ------ Big TV like Screens ------ */
+@media (min-width: 1921px) {
+    body { font-size: 26px; }
+
+    .Layout_Container {
+        grid-template-columns: 400px 1fr;
+    }
+
+    .Header, .Main_Content, footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .Side_Bar_Content { gap: 30px; }
+    h1 { font-size: 4rem; }
+
+    /* ------ For Interaction using Keyboard or TV Remote Clicks ------ */
+    button:focus, a:focus {
+        outline: 3px solid var(--accent-color);
+        outline-offset: 4px;
+    }
+}
+
