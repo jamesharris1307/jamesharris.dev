@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | My Site</title>
+    <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+</head>
+<body class="site">
+
+    <header class="header">
+        <nav class="nav">
+            <a href="{{ '/' | relative_url }}" class="nav__link">Home</a>
+            <a href="{{ '/about' | relative_url }}" class="nav__link">About</a>
+            <a href="{{ '/blog' | relative_url }}" class="nav__link">Blog</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Essay Portfolio</p>
+    </footer>
+
+</body>
+</html>

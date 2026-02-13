@@ -1,0 +1,14 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; line-height: 1.6; color: #333; padding: 20px; }
+
+.header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 40px; }
+.nav__link { margin-right: 15px; text-decoration: none; color: blue; font-weight: bold; }
+
+.essay-list { max-width: 800px; }
+.essay-item { margin-bottom: 30px; }
+.essay-item__date { font-size: 0.8rem; color: #777; }
+.essay-item__title a { color: #222; text-decoration: none; }
+.essay-item__title a:hover { text-decoration: underline; }
+.essay-item__excerpt { margin-top: 10px; color: #555; }
+
+.footer { margin-top: 50px; font-size: 0.8rem; color: #999; }
