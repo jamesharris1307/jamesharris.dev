@@ -1,0 +1,4 @@
+# Basic Jekyll Configuration
+markdown: kramdown
+permalink: pretty
+exclude: [README.md, .gitignore]
