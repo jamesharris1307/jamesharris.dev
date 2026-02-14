@@ -3,8 +3,6 @@ layout: default
 title: My Blog
 ---
 
-# My Essays
-
 <div class="essay-list">
   {% for post in site.posts %}
     <article class="essay-item">
