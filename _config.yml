@@ -2,3 +2,8 @@
 markdown: kramdown
 permalink: pretty
 exclude: [README.md, .gitignore]
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/

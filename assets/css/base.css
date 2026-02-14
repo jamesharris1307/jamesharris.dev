@@ -77,6 +77,49 @@ body {
     width: 100%;
 }
 
+.projects-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.project-item {
+    padding: 20px 0;
+}
+
+.project-item__header {
+    margin-bottom: 10px;
+}
+
+.project-item__title a {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-item__title a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.project-item__date {
+    display: block;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.project-item__excerpt {
+    color: var(--text-main);
+    opacity: 0.8;
+}
+
+.project-divider {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 10px 0;
+}
+
 .essay-list {
     width: 100%;
     max-width: 800px;
@@ -110,4 +153,21 @@ body {
     text-align: center;
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
+}
+
+.project-tags {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border-color);
+    color: var(--accent-color);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
 }
