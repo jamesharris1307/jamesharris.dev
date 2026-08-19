@@ -1,0 +1,172 @@
+/*
+    https://www.flickr.com/photos/philgassor/55341447516/
+*/
+
+
+.Background_01 {
+    height: 95vh;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        /* url("https://live.staticflickr.com/65535/55341447516_98c7dd5b9f_k.jpg") */
+        url("/Images/Unknown.jpg")
+        ;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+.Section_01 {
+    height: calc(100% - 80px);
+    position: relative;
+    overflow: hidden;
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+.Section_01::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+        to bottom,
+
+        rgba(23, 23, 23, 0),
+
+        rgba(23, 23, 23, 0.15),
+
+        rgba(23, 23, 23, 0.40),
+
+        rgba(23, 23, 23, 0.75),
+
+        #171717
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+.Section_01_Content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 125px;
+}
+
+.Introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.Title {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+
+.Sub-Title {
+    font-size: 20px;
+}
+
+.Professional_Links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    margin-top: 25px;
+}
+
+.Professional_Button {
+
+    margin-top: 25px;
+}
+
+.Professional_Button circle {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    transition: 0.2s;
+}
+
+.Professional_Button text {
+    fill: white;
+    stroke: white;
+    stroke-width: 0.5;
+    transition: 0.2s;
+}
+
+.Professional_Button:hover circle {
+    fill: white;
+    stroke: white;
+}
+
+
+.Professional_Button:hover text {
+    fill: black;
+    stroke: black;
+    stroke-width: 1.5;
+}
+
+.Background_02 {
+    min-height: 100vh;
+    position: relative;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+        url("https://live.staticflickr.com/65535/54542179703_69859129bf_b.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}   
+
+.Section_02-Into {
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+.Section_02 {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #171717;
+    font-family: "JetBrains Mono", monospace;
+    padding: 100px;
+}
+
+.Section_02_Content {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.breaker {
+    width: 100%;
+    height: 500px;
+}
+
+.Showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+

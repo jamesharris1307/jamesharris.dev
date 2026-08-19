@@ -1,0 +1,53 @@
+.Foundation {
+
+    /* background-color: red; */
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.Foundation_Banner {
+    /* background-color: green; */
+    padding: 10px;
+    margin-right: 300px;
+}
+
+.Foundation_Navigation {
+    /* background-color: yellow; */
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 50%;
+}
+
+.Foundation_Button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 0;
+    /* font-weight: bold; */
+}
+
+.Foundation_Button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+
+}
+
+.Foundation_Button:hover::after {
+    width: 100%;
+    
+}

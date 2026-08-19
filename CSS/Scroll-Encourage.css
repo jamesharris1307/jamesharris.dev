@@ -1,0 +1,23 @@
+.Scroll-Encourage {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    margin: 10px;
+    bottom: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+
+    z-index: 2;
+}
+
+
+.Scroll-Encourage svg {
+    width: 30px;
+    margin-bottom: 50px;
+}
+
+
+.Scroll-Encourage line {
+    stroke: white;
+    stroke-width: 2;
+}
