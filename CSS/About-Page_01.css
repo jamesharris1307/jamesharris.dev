@@ -13,7 +13,7 @@
             rgba(0, 0, 0, 0.25)
         ),
         /* url("https://live.staticflickr.com/65535/55341447516_98c7dd5b9f_k.jpg") */
-        url("/Images/Unknown.jpg")
+        url("../Images/Unknown.jpg")
         ;
 
     background-size: cover;
