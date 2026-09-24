@@ -14,6 +14,12 @@ body {
     justify-content: center;
 }
 
+.Youtube-Embedd {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .Nav-Bar {
     padding-left: 50%;
     display: flex;
@@ -24,5 +30,33 @@ body {
 }
 
 .Website {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Wide {
+    width: 75%;
+}
+
+.Thin {
+    width: 75%;
+}
+
+#Art {
+    display: flex;
+    flex-direction: column;
+}
+
+#Lego_Animation_Container {
+    display: flex;
+    flex-direction: column;
+}
+
+#Lego_Animations_Column {
+    display: flex;
+}
+
+iframe {
+    padding: 10px;
 }
