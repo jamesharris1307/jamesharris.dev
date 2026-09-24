@@ -1,0 +1,17 @@
+#Lego_Animation_Container {
+    display: flex;
+    flex-direction: column;
+}
+
+#Lego_Animations_Column {
+    display: flex;
+}
+
+#Home_Page_Container {
+    display: flex;
+    flex-direction: column;
+}
+
+#Home_Page_column {
+    display: flex;
+}

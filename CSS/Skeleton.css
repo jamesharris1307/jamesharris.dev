@@ -50,15 +50,6 @@ body {
     flex-direction: column;
 }
 
-#Lego_Animation_Container {
-    display: flex;
-    flex-direction: column;
-}
-
-#Lego_Animations_Column {
-    display: flex;
-}
-
 iframe {
     padding: 10px;
 }
