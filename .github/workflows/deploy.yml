@@ -2,7 +2,7 @@ name: Deploy Static Website
 
 on:
   push:
-    branches: ["Website-v3"]
+    branches: ["V1.0-Minimalist_Website"]
   workflow_dispatch:
 
 permissions:
