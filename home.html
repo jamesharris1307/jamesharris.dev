@@ -6,7 +6,11 @@
     <title>Home</title>
     <link rel="stylesheet" href="CSS/Skeleton.css">
     <link rel="stylesheet" href="CSS/Grids.css">
+    <link rel="stylesheet" href="CSS/External_Components.css">
 </head>
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="james.harris" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
 <body>
     <!-- Website -->
     <div class="Website">
@@ -16,94 +20,88 @@
             </div>
 
             <hr>
+            <!-- <><><><><><><> -->
+            <!-- Navigation Bar -->
             <div class="Nav-Bar">
-                <a href="home.html">Home</a>
-                <a href="">Projects</a>
-                <a href="art.html">Art</a>
-                <a href="">Blog</a>
-                <a href="">About</a>
+                <div class="Nav_Elements">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="Nav_Elements">
+                    <a href="PROJECTS/">Projects</a>
+                </div>
+                <div class="Nav_Elements">
+                    <a href="art.html">Art</a>
+                </div>
+                <div class="Nav_Elements">
+                    <a href="BLOG/">Blog</a>
+                </div>
+                <div class="Nav_Elements">
+                    <a href="about.html">About</a>
+                </div>
             </div>
             <hr>
 
+            <!-- <><><><><><><><><><> -->
+            <!-- Introduction Section -->
             <div id="Introduction">
                 <p>Hello There</p>
                 <h2>My Name is James Harris</h2>
-                <p>Welcome to my website, I hope you enjoy your visit.</p>
+                <p>Welcome to my website.</p>
                 <p>
                     This website is undergoing some much needed maintenance.
                     I was a bit too excited about my personal portfolio website
                     and the scope of the project got way too out of control.
                 </p>
+
                 <p>
-                    I intend for this website to showcase all my art projects
-                    and software engineering projects and also my Game Projects
+                    Who am I?, I am a recent Software Engineering graduate and artist 
+                    looking to jump into the professional world
                 </p>
 
-
-                <div>
-                    <p>
-                        Who am I?, I am a recent Software Engineering graduate and artist 
-                        looking to jump into the professional world
-                    </p>
-                </div>
-            </div>
-        </div>
-        
+                <h2>Projects : </h2>
+                <p>Check out my Boomer Shooter project <a href="/PROJECTS/PRJCT-Project_Boomer.html">Project_Boomer</a>  developed in Godot using Blender and Aesprite</p>
+                <br>
+            </div>  
 
             <hr>
 
-        <div class="Thin">
-            <div id="Projects">
-                <p>You can browse my projects here:</p>
-                <a href="../PROJECTS/PRJCT-Project_Boomer.html">Project Boomer</a>
-                <br>
-                <a href="../PROJECTS/PRJCT-Quantum.html">Quantum Simulation Testing CI/CD Tool</a>
+            <div style="display: flex; justify-content: center;">
+                <div id="Email_Section">
+
+                    <h2>
+                        Contact Me
+                    </h2>
+
+                    <form
+                        action="https://formspree.io/f/xljdopjw"
+                        method="POST"
+                        >
+                        <div class="Email_Component">
+                            <label>
+                                Your email:
+                            </label>
+                                <input placeholder="example@something.com" type="email" name="email">
+                        </div>
+
+                        <div class="Email_Component">
+                            <label>
+                                Your message:
+                            </label>
+                            <textarea placeholder="What would you like to talk about . . ." name="message"></textarea>
+                        </div>
+
+                        <div class="Email_Component">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
+
             
-            <div id="Blog">
-                <p>You can browse my blog posts here:</p>
-                <a href="../BLOG/BLG-01.html">Importance of Writing</a>
-                <br>
-                <a href="../BLOG/BLG-02.html">Godots Architecture</a>
-            </div>
-        </div>
+            <br>
+            <hr>
 
-        <div class="Wide">
-            <p>You can browse my Art here:</p>
-
-            <div id="Lego_Animation_Container">
-                <div id="Home_Page_column">
-                    <div class="Youtube-Embedd">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/SWUABQtuN40?si=u5O_gmp4VKLSH-Fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                <br>
-                    <div class="Youtube-Embedd">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/CiECV-jW7xY?si=265D98wUeKu4MjcS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
-                </div>
-
-                <div id="Home_Page_column">
-                    <div class="Youtube-Embedd">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/o7svXt5mGUc?si=CZbT3KbDOOfX-foe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                <br>
-                    <div class="Youtube-Embedd">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/9q9dzWUELaQ?si=PDNQdWb9fUm3PRiV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div id="Home_Page_column">
-                    <div class="Youtube-Embedd">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/2NbCsJAa03Q?si=-_Os9bPiiF0A2lkW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                <br>
-                    <div class="Youtube-Embedd">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/M_QZaibQ73I?si=haahhEVGA6wIhgXn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-
+            <div>
             </div>
         </div>
     </div>
