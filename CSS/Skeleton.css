@@ -36,6 +36,7 @@ a {
 }
 
 .Youtube-Embedd {
+    padding: 10px;
     display: flex;
     width: 100%;
     justify-content: center;
