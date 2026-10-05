@@ -1,0 +1,52 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="Nxgur34yxj1BaBoX4RlX">
+    <mxGraphModel dx="4020" dy="2576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="erM-fGt-DGzfY5FOURFw-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="2220" width="1920" x="320" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=128;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="120" width="1920" x="320" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1860" width="960" x="800" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" value="Home" vertex="1">
+          <mxGeometry height="60" width="180" x="710" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" value="About" vertex="1">
+          <mxGeometry height="60" width="180" x="1670" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" value="Art" vertex="1">
+          <mxGeometry height="60" width="180" x="1200" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" value="Blog" vertex="1">
+          <mxGeometry height="60" width="180" x="1440" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" value="Projects" vertex="1">
+          <mxGeometry height="60" width="180" x="940" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=128;strokeColor=default;fillColor=none;" value="James Harris" vertex="1">
+          <mxGeometry height="240" width="960" x="800" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" value="Fireplace GIF" vertex="1">
+          <mxGeometry height="410" width="740" x="910" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=64;strokeColor=none;fillColor=none;" value="Welcome to my corner of the internet" vertex="1">
+          <mxGeometry height="240" width="960" x="800" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=32;strokeColor=none;fillColor=none;align=left;spacingLeft=50;" value="Check out my Projects here" vertex="1">
+          <mxGeometry height="140" width="960" x="800" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=32;strokeColor=none;fillColor=none;align=left;spacingLeft=50;" value="Check out my Art here" vertex="1">
+          <mxGeometry height="140" width="960" x="800" y="1754" as="geometry" />
+        </mxCell>
+        <mxCell id="erM-fGt-DGzfY5FOURFw-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=32;strokeColor=none;fillColor=none;align=left;spacingLeft=50;" value="Check out my Blog here" vertex="1">
+          <mxGeometry height="140" width="960" x="800" y="1900" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

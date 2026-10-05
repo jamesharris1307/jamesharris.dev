@@ -12,11 +12,6 @@ h3 {
     padding-top: 0.1;
 }
 
-* {
-    font-family: "inter", monospace;
-}
-
-
 p {
     text-align: justify;
 }
@@ -27,6 +22,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
+    font-family: "inter", monospace;
 }
 
 .Banner *,
@@ -85,12 +81,15 @@ a {
     flex-direction: column;
 }
 
-.Footer{
+.Footer {
     background-color: rgba(0, 0, 0, 0.139);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-content: center;
 }
 
 .section {
@@ -114,4 +113,21 @@ a {
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
     }
+}
+
+@font-face {
+    font-family: "Libron";
+    src: url("Fonts/Libron-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
